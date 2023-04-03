@@ -12,7 +12,7 @@
 	<artifactId>All-Microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>All-Microservices</name>
-	<description>Admin Microservices</description>
+	<description>All Microservices</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -104,12 +104,12 @@
 		</dependency>
 		<dependency>
 			<groupId>com.example</groupId>
-			<artifactId>Leave-Microservices</artifactId>
+			<artifactId>Task-Microservices</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.example</groupId>
-			<artifactId>Task-Microservices</artifactId>
+			<artifactId>Leave-Microservices</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

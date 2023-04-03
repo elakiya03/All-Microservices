@@ -45,6 +45,7 @@ public class SecurityConfig {
 			.authenticated()
 			.and()
 			.cors()
+			.and().rememberMe()
 			.and()
 			.sessionManagement()
 			.sessionCreationPolicy(SessionCreationPolicy.STATELESS)

@@ -1,6 +1,5 @@
 package com.app.admin.employee;
 import java.util.List;
-
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,6 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -221,7 +219,7 @@ public class EmployeeController {
 	}
 	
 	@DeleteMapping("/deleteleave/{leaveId}")
-	public void deleteLeave(@RequestHeader("Authorization") String token,@PathVariable Long leaveId) {
+	public void deleteLeave(@RequestHeader("Authorization") String token, @PathVariable Long leaveId) {
 	    Leave leave = restTemplate.getForObject(leaveServiceurl+"/leaves/"+leaveId, Leave.class);
 	    if(leave.getStatus().equals(LeaveStatus.PENDING)) {
 	    restTemplate.delete(leaveServiceurl + "/leaves/" + leaveId);
