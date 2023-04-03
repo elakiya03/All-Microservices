@@ -6,7 +6,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.app.admin.employee.Employee;
 import com.app.admin.employee.EmployeeAuthRequest;
 import com.app.admin.employee.EmployeeRegRequest;
 import com.app.admin.employee.EmployeeRepository;

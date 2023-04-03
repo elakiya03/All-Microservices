@@ -20,7 +20,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import com.app.admin.employee.Employee;
 import com.app.admin.employee.EmployeeController;
 import com.app.admin.employee.EmployeeRepository;
 import com.app.admin.manager.Manager;

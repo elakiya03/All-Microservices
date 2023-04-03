@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.app.admin.Employee;
 import com.app.admin.JwtService;
 import com.app.admin.manager.Manager;
 import com.app.admin.manager.ManagerRepo;
@@ -31,6 +32,7 @@ import com.app.leave.LeaveRequest;
 import com.app.leave.LeaveStatus;
 import com.app.task.Task;
 import com.app.task.TaskStatus;
+
 
 @RestController
 @RequestMapping("/employees")
@@ -219,7 +221,7 @@ public class EmployeeController {
 	}
 	
 	@DeleteMapping("/deleteleave/{leaveId}")
-	public void deleteLeave(@RequestHeader("Authorization") String token, @PathVariable Long leaveId) {
+	public void deleteLeave(@RequestHeader("Authorization") String token,@PathVariable Long leaveId) {
 	    Leave leave = restTemplate.getForObject(leaveServiceurl+"/leaves/"+leaveId, Leave.class);
 	    if(leave.getStatus().equals(LeaveStatus.PENDING)) {
 	    restTemplate.delete(leaveServiceurl + "/leaves/" + leaveId);

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.app.admin.Admin;
 import com.app.admin.AdminRepository;
+import com.app.admin.Employee;
 import com.app.admin.Role;
 import com.app.admin.department.Department;
 import com.app.admin.department.DepartmentRepository;

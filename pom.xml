@@ -102,14 +102,16 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
 		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>Task-Microservices</artifactId>
+			<groupId>com.leave</groupId>
+			<artifactId>Leave-Microservices</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>Leave-Microservices</artifactId>
+			<groupId>com.task</groupId>
+			<artifactId>Task-Microservices</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
